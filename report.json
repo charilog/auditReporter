@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-02-21T12:56:29Z",
+  "open_ports": [
+    {"protocol":"tcp","port":22,"state":"open","service":"ssh"},
+    {"protocol":"tcp","port":80,"state":"open","service":"http"},
+    {"protocol":"tcp","port":443,"state":"open","service":"https"}
+  ],
+  "web_alerts": [
+    {"site":"https://www.tccb.gov.tr","alert":"Reflected XSS","risk":"medium","risk_desc":"","description":"User input is reflected without encoding.","solution":"Encode output, use CSP.","reference":"OWASP XSS Prevention Cheat Sheet"},
+    {"site":"https://www.tccb.gov.tr","alert":"SQL Injection","risk":"high","risk_desc":"","description":"Potential SQL injection vector detected by tool output.","solution":"Use parameterized queries, validate input.","reference":"OWASP SQL Injection Prevention Cheat Sheet"}
+  ]
+}
