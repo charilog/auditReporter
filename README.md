@@ -64,7 +64,7 @@ Example (PowerShell):
 Remove-Item -Recurse -Force build -ErrorAction SilentlyContinue
 
 cmake -S . -B build -G "Visual Studio 18 2026" -A x64 `
-  -DQt6_DIR="C:\Qt\6.10.1\msvc2022_64\lib\cmake\Qt6" `
+  -DQt6_DIR="C:\path\to\qt\msvc2022_64\lib\cmake\Qt6" `
   -DCMAKE_GENERATOR_INSTANCE="C:\Program Files\Microsoft Visual Studio\18\Community"
 
 cmake --build build --config Release
@@ -81,7 +81,7 @@ To run on a machine without a Qt installation, deploy with `windeployqt`:
 New-Item -ItemType Directory -Force .\deploy | Out-Null
 Copy-Item .\build\Release\audit_reporter_gui.exe .\deploy\
 
-& "C:\Qt\6.10.1\msvc2022_64\bin\windeployqt.exe" `
+& "C:\path\to\qt\msvc2022_64\bin\windeployqt.exe" `
   --release --no-translations `
   .\deploy\audit_reporter_gui.exe
 ```
