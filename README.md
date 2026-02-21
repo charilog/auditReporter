@@ -1,5 +1,7 @@
 # Audit Reporter (Qt6 / C++17) 
 
+![Audit Reporter](auditReporter.png)
+
 ## What it is
 **Audit Reporter** is a desktop application (Qt6 Widgets) that **imports** results from *authorized* audit reports (open ports and web findings) and produces a single consolidated **`report.json`** file. A lightweight **CLI** is also included.
 
